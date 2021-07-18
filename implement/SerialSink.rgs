@@ -1,0 +1,26 @@
+HKCR
+{
+	DPort.SerialSink.1 = s 'SerialSink Class'
+	{
+		CLSID = s '{A0C0A43D-C3F9-408B-8F99-9D33A07A4F66}'
+	}
+	DPort.SerialSink = s 'SerialSink Class'
+	{
+		CLSID = s '{A0C0A43D-C3F9-408B-8F99-9D33A07A4F66}'
+		CurVer = s 'DPort.SerialSink.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A0C0A43D-C3F9-408B-8F99-9D33A07A4F66} = s 'SerialSink Class'
+		{
+			ProgID = s 'DPort.SerialSink.1'
+			VersionIndependentProgID = s 'DPort.SerialSink'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{F1E2849F-13B0-4547-90B5-1D8B10727715}'
+		}
+	}
+}

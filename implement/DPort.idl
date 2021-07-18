@@ -1,0 +1,124 @@
+// DPort.idl : IDL source for DPort
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DPort.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(BC614BD5-D5DD-4C23-838F-14D6203A8D25),
+	dual,
+	nonextensible,
+	helpstring("ISerialSink Interface"),
+	pointer_default(unique)
+]
+interface ISerialSink : IDispatch
+{
+	[propget, id(1), helpstring("property error")] HRESULT error([out, retval] BOOL *pVal);
+	[propget, id(2), helpstring("property Message")] HRESULT Message([out, retval] BSTR *pVal);
+	[propget, id(3), helpstring("property ReceiveBuffer")] HRESULT ReceiveBuffer([out, retval] unsigned char **pVal);
+	[id(4), helpstring("method ClearError")] HRESULT ClearError();
+	[propget, id(5)] HRESULT ProtocolSwitch([out, retval] USHORT* pVal);
+	[propput, id(5)] HRESULT ProtocolSwitch([in] USHORT newVal);
+
+	[propget, id(6)] HRESULT lengthReceivedChars([out, retval] SHORT* pVal);
+
+	[id(7)] HRESULT AddCallBackFunction([in] LONG(*f));
+	
+	[propget, id(8)] HRESULT LastReceived([out, retval] CHAR* pVal);
+};
+
+
+[
+	object,
+	uuid(4BB8490C-5955-41CF-B5C3-AA41DCC2FF96),
+	dual,
+	nonextensible,
+	helpstring("ISerialPort Interface"),
+	pointer_default(unique)
+]
+interface ISerialPort : IDispatch
+{
+	[id(1), helpstring("method SendDeTelTelegram")] HRESULT SendDeTelTelegram([in] IUnknown *pTelegram);
+	[id(2), helpstring("method OpenPort")] HRESULT OpenPort([in]BSTR* initStr , [in] BYTE portnr );
+	[id(3), helpstring("method Kill")] HRESULT Kill();
+	[id(4), helpstring("method StartMonitoring")] HRESULT StartMonitoring();
+	[id(5), helpstring("method CanDo")] HRESULT CanDo();
+	[id(6), helpstring("method ClosePort")] HRESULT ClosePort();
+	[propget, id(7), helpstring("Eigenschaft ComEvents")] HRESULT ComEvents([out, retval] DWORD *pVal);
+	[propput, id(7), helpstring("Eigenschaft ComEvents")] HRESULT ComEvents([in] DWORD newVal);
+	[propget, id(8), helpstring("Eigenschaft WriteBufferSize")] HRESULT WriteBufferSize([out, retval] DWORD *pVal);
+	[propput, id(8), helpstring("Eigenschaft WriteBufferSize")] HRESULT WriteBufferSize([in] DWORD newVal);
+	[id(9), helpstring("method RestartMonitoring")] HRESULT RestartMonitoring();
+	[id(10), helpstring("method StopMonitoring")] HRESULT StopMonitoring();
+	[id(11), helpstring("method Purge")] HRESULT Purge();
+	[id(12), helpstring("method WriteBuffer")] HRESULT WriteBuffer([in] BYTE * buffer, int nsize);
+	[propget, id(13), helpstring("Eigenschaft WaitForSingleObjectConstant")] HRESULT WaitForSingleObjectConstant([out, retval] long *pVal);
+	[propput, id(13), helpstring("Eigenschaft WaitForSingleObjectConstant")] HRESULT WaitForSingleObjectConstant([in] long newVal);
+	[propget, id(14)] HRESULT ProtocolSwitch([out, retval] SHORT* pVal);
+	[propput, id(14)] HRESULT ProtocolSwitch([in] SHORT newVal);
+};
+
+[
+
+	object,
+	uuid(12A8852F-CE62-4FDF-A7A8-E3FAFBCE7DE8),
+	dual,
+	nonextensible,
+	helpstring("_ISerialPortEvents Interface"),
+	pointer_default(unique)
+]
+
+interface _ISerialPortEvents : IDispatch 
+{
+	[id(1), helpstring("method OnReceiveChar")] HRESULT OnReceiveChar([in] BYTE chrter,[in] BYTE port);
+	[id(2), helpstring("Methode OnBreakDetected")] HRESULT OnBreakDetected([in] BYTE port);
+	[id(3), helpstring("Methode OnCTSDetected")] HRESULT OnCTSDetected([in] BYTE port);
+	[id(4), helpstring("Methode OnERRDetected")] HRESULT OnERRDetected([in] BSTR wparam,[in] BYTE port);
+	[id(5), helpstring("Methode OnRINGDetected")] HRESULT OnRINGDetected([in] BYTE port);
+	[id(6), helpstring("Methode OnRXFLAGDetected")] HRESULT OnRXFLAGDetected([in] BYTE port);
+	[id(7), helpstring("Methode NotifyTelegramSend")] HRESULT NotifyTelegramSend([in] BYTE port);
+	[id(8), helpstring("Methode OnReceiveDeTel")] HRESULT OnReceiveDeTel([in]BYTE * dataBuffer,[in]LONG dataLengt,[in] BYTE port);
+	[id(9), helpstring("Methode OnReceiveModBus")] HRESULT OnReceiveModBus([in]BYTE * dataBuffer, [in]LONG dataLengt, [in] BYTE port);
+};
+
+[
+	uuid(F1E2849F-13B0-4547-90B5-1D8B10727715),
+	version(1.0),
+	helpstring("DPort 1.0 Type Library")
+]
+library DPortLib
+{
+	importlib("stdole2.tlb");
+	typedef [uuid("BD9678DB-B8F7-424F-9062-79D3CFFE9D5F")]enum tagPortConstants
+	{
+		SIZE_RECEIVE_BUFFER = 8 * 1500   // DeTel receive Tel Lenght  
+	} PortConstants;
+
+
+
+
+
+	[
+		uuid(A0C0A43D-C3F9-408B-8F99-9D33A07A4F66),
+		helpstring("SerialSink Class")
+	]
+	coclass SerialSink
+	{
+		[default] interface ISerialSink;
+	};
+
+	[
+		uuid(AF34303D-CB9F-4019-ADFF-915B0EC1C545),
+		helpstring("SerialPort Class")
+	]
+	coclass SerialPort
+	{
+		[default] interface ISerialPort;
+		[default, source] dispinterface _ISerialPortEvents;
+	};
+
+};

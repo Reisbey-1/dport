@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DPort", "DPort.vcxproj", "{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DPortPS", "DPortPS.vcxproj", "{1E902C28-B133-4D54-A7B0-5F129849621A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MPortExplorer", "..\DPortExplorer\MPortExplorer.vcxproj", "{C9146162-0C23-4387-9D3C-7520DA0C3EF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}.Debug|Win32.Build.0 = Debug|Win32
+		{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}.Debug|x86.ActiveCfg = Debug|Win32
+		{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}.Debug|x86.Build.0 = Debug|Win32
+		{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}.Release|Win32.ActiveCfg = Release|Win32
+		{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}.Release|Win32.Build.0 = Release|Win32
+		{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}.Release|x86.ActiveCfg = Release|Win32
+		{3EF06DFB-1DAE-4057-AB7C-CEDCF14EE047}.Release|x86.Build.0 = Release|Win32
+		{1E902C28-B133-4D54-A7B0-5F129849621A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E902C28-B133-4D54-A7B0-5F129849621A}.Debug|Win32.Build.0 = Debug|Win32
+		{1E902C28-B133-4D54-A7B0-5F129849621A}.Debug|x86.ActiveCfg = Debug|Win32
+		{1E902C28-B133-4D54-A7B0-5F129849621A}.Debug|x86.Build.0 = Debug|Win32
+		{1E902C28-B133-4D54-A7B0-5F129849621A}.Release|Win32.ActiveCfg = Release|Win32
+		{1E902C28-B133-4D54-A7B0-5F129849621A}.Release|Win32.Build.0 = Release|Win32
+		{1E902C28-B133-4D54-A7B0-5F129849621A}.Release|x86.ActiveCfg = Release|Win32
+		{1E902C28-B133-4D54-A7B0-5F129849621A}.Release|x86.Build.0 = Release|Win32
+		{C9146162-0C23-4387-9D3C-7520DA0C3EF3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9146162-0C23-4387-9D3C-7520DA0C3EF3}.Debug|Win32.Build.0 = Debug|Win32
+		{C9146162-0C23-4387-9D3C-7520DA0C3EF3}.Debug|x86.ActiveCfg = Debug|Win32
+		{C9146162-0C23-4387-9D3C-7520DA0C3EF3}.Debug|x86.Build.0 = Debug|Win32
+		{C9146162-0C23-4387-9D3C-7520DA0C3EF3}.Release|Win32.ActiveCfg = Release|Win32
+		{C9146162-0C23-4387-9D3C-7520DA0C3EF3}.Release|Win32.Build.0 = Release|Win32
+		{C9146162-0C23-4387-9D3C-7520DA0C3EF3}.Release|x86.ActiveCfg = Release|Win32
+		{C9146162-0C23-4387-9D3C-7520DA0C3EF3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEA12C44-9409-4C7A-B029-3EA6C8703EDE}
+	EndGlobalSection
+EndGlobal

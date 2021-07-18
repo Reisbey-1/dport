@@ -1,0 +1,26 @@
+HKCR
+{
+	DPort.SerialPort.1 = s 'SerialPort Class'
+	{
+		CLSID = s '{68839205-29C4-4573-8856-A70BA03BFC74}'
+	}
+	DPort.SerialPort = s 'SerialPort Class'
+	{
+		CLSID = s '{68839205-29C4-4573-8856-A70BA03BFC74}'
+		CurVer = s 'DPort.SerialPort.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {68839205-29C4-4573-8856-A70BA03BFC74} = s 'SerialPort Class'
+		{
+			ProgID = s 'DPort.SerialPort.1'
+			VersionIndependentProgID = s 'DPort.SerialPort'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{F1E2849F-13B0-4547-90B5-1D8B10727715}'
+		}
+	}
+}

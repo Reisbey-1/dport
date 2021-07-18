@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CDPortApp" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>dllmain.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CDPortModule" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dllmain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSerialPort" Collapsed="true">
+    <Position X="0.5" Y="3" Width="2.75" />
+    <NestedTypes>
+      <Enum Name="CSerialPort::protocolSwitch" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SerialPort.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BEISgAABAVRKGQcwmBg4MFAB4MBpARhRIBiRAhCMEyE=</HashCode>
+      <FileName>SerialPort.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxy_ISerialPortEvents&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAICAAAAAAAAAQAAAIAAAABAAAAAAAYAAAAIA=</HashCode>
+      <FileName>_ISerialPortEvents_CP.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CProxyISerialSink&lt;T&gt;" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAQAAAAAAAAAAAABAAAAAAACAAAAAA=</HashCode>
+      <FileName>ISerialSink_CP.H</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSerialSink" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAggAAkAgAAgIAABAAAEAhAAAAABFIKAAAkAA0kCQ=</HashCode>
+      <FileName>SerialSink.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSmartConnector" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCAAAAAAAACAAAALgYAQAAgAACASAAgQAAACAEAAEAA=</HashCode>
+      <FileName>SmartConnector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ISerialSink" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgIAAAAAAAAAAAAAABEAAAAAgAA0AAA=</HashCode>
+      <FileName>DPort_i.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ISerialPort" Collapsed="true">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAAVAAAQYAgBAgIAABAAAgABAAAACAAgAAAAE=</HashCode>
+      <FileName>DPort_i.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ISerialPortEvents" Collapsed="true">
+    <Position X="7" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAgAgAAAAAABAAAEABAAAAAAAAKAAAAAAAACA=</HashCode>
+      <FileName>DPort_i.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_IID" Collapsed="true">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAACAQABAAAAAAAA=</HashCode>
+      <FileName>DPort_i.c</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ISerialSinkVtbl" Collapsed="true">
+    <Position X="10.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAJBgIAAAAAAAAAAQAAgBEAAAAAgBA0AAA=</HashCode>
+      <FileName>DPort_i.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ISerialPortVtbl" Collapsed="true">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAIAAVAJBQYAgBAgIAABAQAggBAAAACAAhAAAAE=</HashCode>
+      <FileName>DPort_i.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_ISerialPortEventsVtbl" Collapsed="true">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAIAgAgJBAAAABAAAEABAQAAgAAAKAAAABAAACA=</HashCode>
+      <FileName>DPort_i.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="IID" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DPort_i.c</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="CLSID" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DPort_i.c</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SerialSink" Collapsed="true">
+    <Position X="10.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DPort_i.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SerialPort" Collapsed="true">
+    <Position X="8.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DPort_i.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="fp" Collapsed="true">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SerialSink.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

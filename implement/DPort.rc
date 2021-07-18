@@ -1,0 +1,165 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_SERIALSINK          REGISTRY                "SerialSink.rgs"
+
+IDR_SERIALPORT          REGISTRY                "SerialPort.rgs"
+
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_DPORT               REGISTRY                "DPort.rgs"
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""DPort.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "InternalName", "DPort.dll"
+            VALUE "OriginalFilename", "DPort.dll"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "DPort"
+    IDS_ISERIALPORTEVENTS_DESC "ISerialPortEvents-Klasse"
+    IDS_SYSTEM_IS_NOT_IN_HALT_MODUS "system is not in halt modus !\n"
+    IDS_FLASH_WRITE_ERROR   "flash write error."
+    IDS_CODE_ERROR          "code error. module id false. "
+    IDS_NO_VALID_COMMAND    "no valid command !"
+    IDS_INVALID_TELEGRAM_START "invalid telegram start"
+    IDS_INVALID_TELEGRAM_END "invalid telegram end"
+    IDS_UNDEFINED_ERROR     "undefined error"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_TELL_LIMIT_ERROR    "Telegram limit is exceeded !"
+    IDS_NOTFY_ENTERBOOTSECTION "ENTER BOOT SECTION "
+    IDS_NOTFY_LEAVEBOOTSECTION "LEAVE BOOT SECTION"
+    IDS_NOTFY_PROGRAMMING_MODE_ENTERED "ENTER PROGRAMMING MODE"
+    IDS_NOTFY_INTTERRUPTS_APPLICATION "INTTERRUPTS TO APPLICATION SECTION"
+    IDS_NOTFY_INTTERRUPTS_BOOT "INTTERRUPTS TO BOOT SECTION"
+    IDS_NOTFY_TIMER_STOPPED "TIMER STOP"
+    IDS_NOTFY_TIMER_STARTED "TIMER START"
+    IDS_NOTFY_DATA_WRITTEN  "DATA IS WRITTEN "
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
